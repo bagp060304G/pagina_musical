@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS - Sitio Oficial</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body id="inicio">
+
+    <!-- A. ENCABEZADO (HEADER) -->
+    <header id="encabezado">
+        <div class="contenedor-header">
+            <div class="marca">
+                <img src="logo.jpeg" alt="Logo del artista" class="logo-img">
+                <h1>Oasis</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#biografia">Biografía</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#musica">Canciones</a></li>
+                    <li><a href="#letras">Letras</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- B. PRESENTACIÓN DEL ARTISTA -->
+    <section id="biografia" class="seccion">
+        <h2>Sobre el Artista</h2>
+        <div class="tarjeta-bio">
+            <div class="bio-imagen">
+                <img src="principal.png" alt="Fotografía de oasis">
+            </div>
+            <div class="bio-info">
+                <h3>Oasis</h3>
+                <ul class="datos-clave">
+                    <li><strong>País de origen:</strong> Reino Unido</li>
+                    <li><strong>Género musical:</strong> Rock</li>
+                    <li><strong>Año de inicio:</strong> 1991</li>
+                    <li><strong>Miembros principales:</strong> Liam Gallagher (voz), Noel Gallagher (guitarra principal y composición), Paul "Bonehead" Arthurs (guitarra rítmica), Paul "Guigsy" McGuigan (bajo) y Tony McCarroll / Alan White (batería).</li>
+                </ul>
+                <p>
+                    Oasis es una influyente banda de rock formada en Mánchester en 1991 y liderada por los hermanos Liam y Noel Gallagher. Se convirtieron en los máximos referentes del movimiento Britpop de los años 90 gracias a sus melodías de guitarra inspiradas en The Beatles y su actitud rebelde. Alcanzaron la fama mundial con sus primeros discos, Definitely Maybe (1994) y (What's the Story) Morning Glory? (1995), vendiendo decenas de millones de copias. Tras separarse en 2009 debido a las constantes peleas entre los hermanos, sorprendieron al mundo anunciando su esperado regreso a los escenarios en 2024, siendo incluidos en el Salón de la Fama del Rock and Roll en 2026.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- C. GALERÍA DE IMÁGENES -->
+    <section id="galeria" class="seccion">
+        <h2>Galería Fotográfica</h2>
+        <div class="grid-galeria">
+            <div class="item-galeria">
+                <img src="foto1.jpg" alt="Foto 1">
+            </div>
+            <div class="item-galeria">
+                <img src="foto2.jpg" alt="Foto 2">
+            </div>
+            <div class="item-galeria">
+                <img src="foto3.jpg" alt="Foto 3">
+            </div>
+            <div class="item-galeria">
+                <img src="foto4.jpg" alt="Foto 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- D. SECCIÓN DE VIDEOS MUSICALES -->
+    <section id="videos" class="seccion">
+        <h2>Videos Musicales</h2>
+        <div class="contenedor-video">
+            <!-- OPCIÓN 1: Video local MP4 (Descomenta si tienes el archivo en tu carpeta) -->
+            <!-- 
+            <video controls class="reproductor-video">
+                <source src="videos/video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video> 
+            -->
+
+            <!-- OPCIÓN 2: Video de YouTube (Solo cambia el código después de /embed/) -->
+            <iframe class="video-youtube" 
+                src="video.mp4" 
+                title="Video Musical" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- E. CATÁLOGO DE CANCIONES (Máximo 5) -->
+    <section id="musica" class="seccion">
+        <h2>Catálogo Musical</h2>
+        <div class="lista-canciones">
+            
+            <!-- Canción 1 -->
+            <div class="tarjeta-cancion">
+                <img src="album.jpg" alt="album" class="portada-album">
+                <h3>1. Wonderwall</h3>
+                <p class="nombre-album">Álbum: (What's the Story) Morning Glory?</p>
+                <audio controls>
+                    <source src="cancion1.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="acciones-cancion">
+                    <a href="#letra-1" class="btn btn-secundario">Ver Letra</a>
+                    <a href="cancion1.mp3" download class="btn btn-primario">Descargar MP3</a>
+                </div>
+            </div>
+
+            <!-- Canción 2 -->
+            <div class="tarjeta-cancion">
+                <img src="album.jpg" alt="album" class="portada-album">
+                <h3>2. Don't Look Back in Anger </h3>
+                <p class="nombre-album">Álbum: (What's the Story) Morning Glory?</p>
+                <audio controls>
+                    <source src="cancion2.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="acciones-cancion">
+                    <a href="#letra-2" class="btn btn-secundario">Ver Letra</a>
+                    <a href="cancion2.mp3" download class="btn btn-primario">Descargar MP3</a>
+                </div>
+            </div>
+
+            <!-- Canción 3 (Puedes duplicar este bloque hasta tener máximo 5) -->
+            <div class="tarjeta-cancion">
+                <img src="album.jpg" alt="album" class="portada-album">
+                <h3>3. Champagne Supernova </h3>
+                <p class="nombre-album">Álbum: (What's the Story) Morning Glory?</p>
+                <audio controls>
+                    <source src="cancion3.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="acciones-cancion">
+                    <a href="#letra-3" class="btn btn-secundario">Ver Letra</a>
+                    <a href="cancion3.mp3" download class="btn btn-primario">Descargar MP3</a>
+                </div>
+            </div>
+
+
+            <div class="tarjeta-cancion">
+                <img src="al2.jpg" alt="album" class="portada-album">
+                <h3>4. Live Forever </h3>
+                <p class="nombre-album">Álbum: Definitely Maybe</p>
+                <audio controls>
+                    <source src="cancion4.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="acciones-cancion">
+                    <a href="#letra-4" class="btn btn-secundario">Ver Letra</a>
+                    <a href="cancion4.mp3" download class="btn btn-primario">Descargar MP3</a>
+                </div>
+            </div>
+
+
+            <div class="tarjeta-cancion">
+                <img src="al3.jpg" alt="album" class="portada-album">
+                <h3>5. Stop Crying Your Heart Out </h3>
+                <p class="nombre-album">Álbum: Heathen Chemistry</p>
+                <audio controls>
+                    <source src="cancion5.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="acciones-cancion">
+                    <a href="#letra-5" class="btn btn-secundario">Ver Letra</a>
+                    <a href="cancion5.mp3" download class="btn btn-primario">Descargar MP3</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- F. LETRAS DE CANCIONES -->
+    <section id="letras" class="seccion">
+        <h2>Letras de Canciones</h2>
+        <div class="contenedor-letras">
+
+            <!-- Letra 1 -->
+            <div id="letra-1" class="caja-letra">
+                <h3>Wonderwall</h3>
+                <audio controls>
+                    <source src="cancion1.mp3" type="audio/mpeg">
+                </audio>
+                <div class="texto-letra">
+                    <p>
+                        Today is gonna be the day
+                        That they're gonna throw it back to you
+                        By now you should've somehow
+                        Realized what you gotta do
+                        I don't believe that anybody
+                        Feels the way I do, about you now
+                        Backbeat, the word is on the street
+                        That the fire in your heart is out
+                        I'm sure you've heard it all before
+                        But you never really had a doubt
+                        I don't believe that anybody
+                        Feels the way I do about you now
+                        And all the roads we have to walk are winding
+                        And all the lights that lead us there are blinding
+                        There are many things that I
+                        Would like to say to you, but I don't know how
+                        Because maybe, you're gonna be the one that saves me
+                        And after all, you're my wonderwall
+                        Today was gonna be the day
+                        But they'll never throw it back to you
+                        By now you should've somehow
+                        Realized what you're not to do
+                        I don't believe that anybody
+                        Feels the way I do, about you now
+                        And all the roads that lead you there were winding
+                        And all the lights that light the way are blinding
+                        There are many things that I
+                        Would like to say to you, but I don't know how
+                        Because maybe, you're gonna be the one that saves me
+                        And after all, you're my wonderwall
+                        Today was gonna be the day
+                        But they'll never throw it back to you
+                        By now you should've somehow
+                        Realized what you're not to do
+                        I don't believe that anybody
+                        Feels the way I do, about you now
+                        I said maybe, you're gonna be the one that saves me
+                        You're gonna be the one that saves me
+                        You're gonna be the one that saves me
+                    </p>
+                    
+                </div>
+                <a href="#musica" class="enlace-volver">↑ Volver al catálogo</a>
+            </div>
+
+            <!-- Letra 2 -->
+            <div id="letra-2" class="caja-letra">
+                <h3> Don't Look Back in Anger </h3>
+                <audio controls>
+                    <source src="cancion2.mp3" type="audio/mpeg">
+                </audio>
+                <div class="texto-letra">
+                    <p>
+                        Slip inside the eye of your mind
+                        Don't you know you might find
+                        A better place to play?
+                        You said that you'd never been
+                        But all the things that you've seen
+                        Will slowly fade away
+                        So I start a revolution from my bed
+                        'Cause you said the brains I had went to my head
+                        Step outside, summertime's in bloom
+                        Stand up beside the fireplace
+                        Take that look from off your face
+                        You ain't ever gonna burn my heart out
+                        And so Sally can wait
+                        She knows it's too late
+                        As we're walking on by
+                        Her soul slides away
+                        But don't look back in anger
+                        I heard you say
+                        Take me to the place where you go
+                        Where nobody knows
+                        If it's night or day
+                        But please don't put your life in the hands
+                        Of a rock and roll band
+                        Who'll throw it all away
+                        I'm gonna start a revolution from my bed
+                        'Cause you said the brains I had went to my head
+                        Step outside 'cause summertime's in bloom
+                        Stand up beside the fireplace
+                        Take that look from off your face
+                        'Cause you ain't ever gonna burn my heart out
+                        And so Sally can wait
+                        She knows it's too late
+                        As she's walking on by
+                        My soul slides away
+                        But don't look back in anger
+                        I heard you say
+                        So Sally can wait
+                        She knows it's too late
+                        As we're walking on by
+                        Her soul slides away
+                        But don't look back in anger
+                        I heard you say
+                        So Sally can wait
+                        She knows it's too late
+                        As she's walking on by
+                        My soul slides away
+                        But don't look back in anger
+                        Don't look back in anger
+                        I heard you say
+                        At least not today
+                    </p>
+                </div>
+                <a href="#musica" class="enlace-volver">↑ Volver al catálogo</a>
+            </div>
+
+            <!-- Letra 3 -->
+            <div id="letra-3" class="caja-letra">
+                <h3>[Título de la Canción 3]</h3>
+                <audio controls>
+                    <source src="cancion3.mp3" type="audio/mpeg">
+                </audio>
+                <div class="texto-letra">
+                    <p>
+                        How many special people change?
+                        How many lives are livin' strange?
+                        Where were you while we were gettin' high?
+                        Slowly walkin' down the hall
+                        Faster than a cannonball
+                        Where were you while we were gettin' high?
+Someday you will find me
+Caught beneath the landslide
+In a champagne supernova in the sky
+Someday you will find me
+Caught beneath the landslide
+In a champagne supernova
+A champagne supernova in the sky
+Wake up the dawn and ask her why
+A dreamer dreams she never dies
+Wipe that tear away now from your eye
+Slowly walkin' down the hall
+Faster than a cannonball
+Where were you while we were gettin' high?
+Someday you will find me
+Caught beneath the landslide
+In a champagne supernova in the sky
+Someday you will find me
+Caught beneath the landslide
+In a champagne supernova
+A champagne supernova
+'Cause people believe
+That they're gonna get away for the summer
+But you and I, we live and die
+The world's still spinnin' 'round, we don't know why
+Why, why, why, why
+How many special people change?
+How many lives are livin' strange?
+Where were you while we were gettin' high?
+Slowly walkin' down the hall
+Faster than a cannonball
+Where were you while we were gettin' high?
+Someday you will find me
+Caught beneath the landslide
+In a champagne supernova in the sky
+Someday you will find me
+Caught beneath the landslide
+In a champagne supernova
+A champagne supernova
+'Cause people believe
+That they're gonna get away for the summer
+But you and I, we live and die
+The world's still spinnin' 'round, we don't know why
+Why, why, why, why
+Na, na, na
+Na, na, na
+Na, na, na
+Na, na, na
+Na, na, na
+Na, na, na
+Na, na
+Na, na
+Na, na, na
+How many special people change?
+How many lives are livin' strange?
+Where were you while we were gettin' high?
+We were gettin' high
+We were gettin' high
+We were gettin' high
+We were gettin' high
+We were gettin' high
+We were gettin' high
+We were gettin' high
+We were gettin' high
+We were gettin' high
+                    </p>
+                </div>
+                <a href="#musica" class="enlace-volver">↑ Volver al catálogo</a>
+            </div>
+
+
+            <div id="letra-4" class="caja-letra">
+                <h3>Live Forever</h3>
+                <audio controls>
+                    <source src="cancion4.mp3" type="audio/mpeg">
+                </audio>
+                <div class="texto-letra">
+                    <p>
+                        Oh yeah
+Maybe I don't really wanna know
+How your garden grows
+'Cause I just wanna fly
+Lately, did you ever feel the pain
+In the morning rain
+As it soaks you to the bone?
+Maybe I just wanna fly
+Wanna live, I don't wanna die
+Maybe I just wanna breathe
+Maybe I just don't believe
+Maybe you're the same as me
+We see things they'll never see
+You and I are gonna live forever
+I said maybe I don't really wanna know
+How your garden grows
+'Cause I just wanna fly
+Lately, did you ever feel the pain
+In the morning rain
+As it soaks you to the bone?
+Maybe I will never be
+All the things that I wanna be
+Now is not the time to cry
+Now's the time to find out why
+I think you're the same as me
+We see things they'll never see
+You and I are gonna live forever
+Maybe I don't really wanna know
+How your garden grows
+'Cause I just wanna fly
+Lately, did you ever feel the pain
+In the morning rain
+As it soaks you to the bone?
+Maybe I just wanna fly
+Wanna live, I don't wanna die
+Maybe I just wanna breathe
+Maybe I just don't believe
+Maybe you're the same as me
+We see things they'll never see
+You and I are gonna live forever
+Gonna live forever
+Gonna live forever
+We're gonna live forever
+Gonna live forever
+Gonna live forever
+Gonna live forever
+                    </p>
+                </div>
+                <a href="#musica" class="enlace-volver">↑ Volver al catálogo</a>
+            </div>
+
+
+
+            <div id="letra-5" class="caja-letra">
+                <h3>Stop Crying Your Heart Out</h3>
+                <audio controls>
+                    <source src="cancion5.mp3" type="audio/mpeg">
+                </audio>
+                <div class="texto-letra">
+                    <p>
+                        Hold up
+Hold on
+Don't be scared
+You'll never change what's been and gone
+May your smile (may your smile)
+Shine on (shine on)
+Don't be scared (don't be scared)
+Your destiny may keep you warm
+'Cause all of the stars are fading away
+Just try not to worry, you'll see them someday
+Take what you need, and be on your way
+And stop crying your heart out
+Get up (get up)
+Come on (come on)
+Why're you scared? (I'm not scared)
+You'll never change what's been and gone
+'Cause all of the stars are fading away
+Just try not to worry, you'll see them someday
+Take what you need, and be on your way
+And stop crying your heart out
+'Cause all of the stars are fading away
+Just try not to worry, you'll see them someday
+Just take what you need, and be on your way
+And stop crying your heart out
+We're all of the stars, we're fading away
+Just try not to worry, you'll see us some day
+Just take what you need, and be on your way
+And stop crying your heart out
+Stop crying your heart out
+Stop crying your heart out
+Stop crying your heart out
+                    </p>
+                </div>
+                <a href="#musica" class="enlace-volver">↑ Volver al catálogo</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BOTÓN FLOTANTE PARA SUBIR -->
+    <a href="#inicio" class="btn-subir" title="Volver arriba">↑ Inicio</a>
+
+    <!-- G. PIE DE PÁGINA (FOOTER) -->
+    <footer id="pie-pagina">
+        <div class="info-estudiante">
+            <p><strong>Desarrollado por:</strong> [Tu Nombre Completo]</p>
+            <p><strong>Carrera:</strong> [Tu Carrera] | <strong>Asignatura:</strong> [Nombre de la Materia]</p>
+            <p><strong>Año:</strong> 2026</p>
+        </div>
+        <div class="redes-sociales">
+            <p>Redes Oficiales del Artista:</p>
+            <a href="https://spotify.com" target="_blank">Spotify</a> |
+            <a href="https://youtube.com" target="_blank">YouTube</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>

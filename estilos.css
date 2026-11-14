@@ -1,0 +1,363 @@
+/* Configuración general y variables de color */
+:root {
+    --fondo-principal: #121212;
+    --fondo-tarjeta: #1e1e24;
+    --color-acento: #e94560; /* Puedes cambiar este color según el estilo de tu artista */
+    --texto-claro: #f5f5f5;
+    --texto-secundario: #b3b3b3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en los enlaces */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fondo-principal);
+    color: var(--texto-claro);
+    line-height: 1.6;
+}
+
+/* A. ENCABEZADO */
+#encabezado {
+    background-color: #0b0b0e;
+    border-bottom: 2px solid var(--color-acento);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.contenedor-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50  px;
+    border-radius: 0px;
+    object-fit: cover;
+    
+}
+
+.marca h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--color-acento);
+}
+
+/* ESTRUCTURA DE SECCIONES */
+.seccion {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.seccion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--color-acento);
+    padding-left: 12px;
+}
+
+/* B. BIOGRAFÍA */
+.tarjeta-bio {
+    background-color: var(--fondo-tarjeta);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.bio-imagen img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.bio-info h3 {
+    font-size: 1.6rem;
+    color: var(--color-acento);
+    margin-bottom: 10px;
+}
+
+.datos-clave {
+    list-style: none;
+    margin-bottom: 15px;
+    color: var(--texto-secundario);
+}
+
+.datos-clave li {
+    margin-bottom: 5px;
+}
+
+/* C. GALERÍA */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.item-galeria {
+    overflow: hidden;
+    border-radius: 10px;
+    height: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Efecto al pasar el cursor */
+.item-galeria:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+}
+
+/* D. VIDEOS */
+.contenedor-video {
+    background-color: var(--fondo-tarjeta);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.video-youtube, .reproductor-video {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+/* E. CATÁLOGO DE CANCIONES */
+.lista-canciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-cancion {
+    background-color: var(--fondo-tarjeta);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #2d2d35;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-cancion:hover {
+    transform: translateY(-5px);
+}
+
+audio {
+    width: 100%;
+    height: 40px;
+}
+
+.acciones-cancion {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn-primario {
+    background-color: var(--color-acento);
+    color: white;
+}
+
+.btn-secundario {
+    background-color: #33333d;
+    color: var(--texto-claro);
+}
+
+/* F. LETRAS DE CANCIONES */
+.contenedor-letras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.caja-letra {
+    background-color: var(--fondo-tarjeta);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.texto-letra {
+    background-color: #16161b;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 250px; /* Permite hacer scroll si la letra es muy larga */
+    overflow-y: auto;
+    color: var(--texto-secundario);
+    font-size: 0.95rem;
+}
+
+.texto-letra p {
+    margin-bottom: 12px;
+}
+
+.enlace-volver {
+    color: var(--color-acento);
+    text-decoration: none;
+    font-size: 0.9rem;
+    align-self: flex-start;
+}
+
+.enlace-volver:hover {
+    text-decoration: underline;
+}
+
+/* BOTÓN VOLVER AL INICIO */
+.btn-subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-acento);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* G. PIE DE PÁGINA */
+#pie-pagina {
+    background-color: #0b0b0e;
+    border-top: 2px solid #2d2d35;
+    padding: 30px 20px;
+    margin-top: 60px;
+    text-align: center;
+    color: var(--texto-secundario);
+}
+
+.info-estudiante p {
+    margin-bottom: 5px;
+}
+
+.redes-sociales {
+    margin-top: 15px;
+}
+
+.redes-sociales a {
+    color: var(--color-acento);
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+/* DISEÑO RESPONSIVE (CELULARES Y TABLETS) */
+@media (max-width: 768px) {
+    .contenedor-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .tarjeta-bio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-imagen img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .video-youtube, .reproductor-video {
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.tarjeta-cancion {
+    background-color: var(--fondo-tarjeta);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #2d2d35;
+    transition: transform 0.3s ease; /* <-- Puedes borrar esta línea también */
+}
+
+/* BORRA TODO ESTE BLOQUE COMPLETO: */
+.tarjeta-cancion:hover {
+    transform: translateY(-5px);
+}
