@@ -361,3 +361,48 @@ audio {
 .tarjeta-cancion:hover {
     transform: translateY(-5px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.caja-concierto {
+    background-color: var(--fondo-tarjeta);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    
+}
+
+.caja-concierto h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.caja-concierto p {
+    color: var(--texto-secundario);
+    margin-bottom: 10px;
+}
+
+.caja-concierto .btn {
+    display: inline-block; /* Para que el botón no ocupe todo el ancho */
+}
+
+
+
+
+
+
+
+
+
+
