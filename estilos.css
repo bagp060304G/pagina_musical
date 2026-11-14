@@ -1,4 +1,4 @@
-/* Configuración general y variables de color */
+
 :root {
     --fondo-principal: #121212;
     --fondo-tarjeta: #1e1e24;
@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* A. ENCABEZADO */
+
 #encabezado {
     background-color: #0b0b0e;
     border-bottom: 2px solid var(--color-acento);
@@ -79,7 +79,7 @@ body {
     color: var(--color-acento);
 }
 
-/* ESTRUCTURA DE SECCIONES */
+
 .seccion {
     max-width: 1100px;
     margin: 40px auto;
@@ -93,7 +93,7 @@ body {
     padding-left: 12px;
 }
 
-/* B. BIOGRAFÍA */
+
 .tarjeta-bio {
     background-color: var(--fondo-tarjeta);
     border-radius: 10px;
@@ -127,7 +127,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* C. GALERÍA */
+
 .grid-galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -148,13 +148,13 @@ body {
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-/* Efecto al pasar el cursor */
+
 .item-galeria:hover img {
     transform: scale(1.08);
     filter: brightness(1.1);
 }
 
-/* D. VIDEOS */
+
 .contenedor-video {
     background-color: var(--fondo-tarjeta);
     padding: 20px;
@@ -169,7 +169,7 @@ body {
     border-radius: 8px;
 }
 
-/* E. CATÁLOGO DE CANCIONES */
+
 .lista-canciones {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -226,7 +226,7 @@ audio {
     color: var(--texto-claro);
 }
 
-/* F. LETRAS DE CANCIONES */
+
 .contenedor-letras {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -267,7 +267,7 @@ audio {
     text-decoration: underline;
 }
 
-/* BOTÓN VOLVER AL INICIO */
+
 .btn-subir {
     position: fixed;
     bottom: 20px;
@@ -281,11 +281,11 @@ audio {
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-/* G. PIE DE PÁGINA */
+
 #pie-pagina {
     background-color: #0b0b0e;
     border-top: 2px solid #2d2d35;
-    padding: 30px 20px;
+    padding: 30px 20px 90px 20px;
     margin-top: 60px;
     text-align: center;
     color: var(--texto-secundario);
@@ -310,7 +310,7 @@ audio {
     text-decoration: underline;
 }
 
-/* DISEÑO RESPONSIVE (CELULARES Y TABLETS) */
+
 @media (max-width: 768px) {
     .contenedor-header {
         flex-direction: column;
@@ -357,7 +357,7 @@ audio {
     transition: transform 0.3s ease; /* <-- Puedes borrar esta línea también */
 }
 
-/* BORRA TODO ESTE BLOQUE COMPLETO: */
+
 .tarjeta-cancion:hover {
     transform: translateY(-5px);
 }
